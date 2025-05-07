@@ -1,0 +1,57 @@
+public class Jugador {
+    private String nombre;
+
+    public Jugador(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+}
+
+public class Encuentro {
+    private int limite;
+
+    public Encuentro(int limite) {
+        this.limite = limite;
+    }
+
+    public int getLimite() {
+        return limite;
+    }
+
+    public void setLimite(int limite) {
+        this.limite = limite;
+    }
+}
+
+public class Torneo {
+    private Jugador ganador;
+    private Encuentro encuentro;
+
+    public Torneo(Jugador ganador, Encuentro encuentro) {
+        this.ganador = ganador;
+        this.encuentro = encuentro;
+    }
+
+    public Jugador getGanador() {
+        return ganador;
+    }
+
+    public void setGanador(Jugador ganador) {
+        this.ganador = ganador;
+    }
+
+    public Encuentro getEncuentro() {
+        return encuentro;
+    }
+
+    public void setEncuentro(Encuentro encuentro) {
+        this.encuentro = encuentro;
+    }
+}
