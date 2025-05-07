@@ -1,0 +1,19 @@
+def dividir_camel_case(cadena):
+    palabras = []
+    palabra_actual = cadena[0]
+
+    for c in cadena[1:]:
+        if c.isupper():
+            palabras.append(palabra_actual)
+            palabra_actual = c
+        else:
+            palabra_actual += c
+
+    palabras.append(palabra_actual)
+
+    print(f"Número de palabras: {len(palabras)}")
+    for p in palabras:
+        print(p)
+
+entrada = input()
+dividir_camel_case(entrada)
